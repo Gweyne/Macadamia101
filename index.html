@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Macadamia Sustainable Lifestyle: A Guide to Health, Beauty, and Wellness</title>
+  <meta name="description" content="Explore a macadamia sustainable lifestyle across food, history, beauty, wellness, and community—with practical tips and thoughtful sourcing." />
+  <style>
+    :root{
+      --bg: #fff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #4b8b6a;
+      --accent-2: #b08968;
+      --surface: #f9fafb;
+      --line: #e5e7eb;
+      --shadow: 0 10px 20px rgba(0,0,0,.06);
+      --radius: 16px;
+      --maxw: 72ch;
+      --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      --h1: clamp(2rem, 3vw + 1rem, 3rem);
+      --h2: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+      --body: 1.05rem;
+      --lh: 1.75;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #0b0f0d;
+        --text: #e5e7eb;
+        --muted: #9aa3af;
+        --accent: #71c39a;
+        --accent-2: #d8b8a0;
+        --surface: #101513;
+        --line: #1f2a24;
+        --shadow: 0 10px 24px rgba(0,0,0,.45);
+      }
+    }
+    body{
+      margin:0; padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: var(--font-sans);
+      font-size: var(--body);
+      line-height: var(--lh);
+    }
+    .container{ max-width: 1200px; margin-inline:auto; padding: clamp(16px,3vw,40px); }
+    .post{ max-width: var(--maxw); margin-inline:auto; }
+    .post-header{ margin-bottom:1.5rem; }
+    .post-title{ font-size: var(--h1); line-height:1.15; font-weight:800; margin:0 0 .5rem 0; }
+    .post-subtitle{ color:var(--muted); font-size:1rem; margin:0 0 .5rem 0; }
+    .post-meta{ display:flex; gap:.75rem; flex-wrap:wrap; color:var(--muted); font-size:.95rem; }
+    .badge{ display:inline-flex; align-items:center; gap:.5ch; padding:.35rem .6rem; font-size:.85rem; border-radius:999px; background: color-mix(in oklab, var(--accent) 12%, transparent); color: color-mix(in oklab, var(--accent) 40%, var(--text)); border:1px solid color-mix(in oklab, var(--accent) 30%, var(--line)); }
+    .post h2{ font-size: var(--h2); margin:2.2rem 0 .75rem; font-weight:750; padding-bottom:.4rem; border-bottom:2px solid color-mix(in oklab, var(--accent) 30%, transparent); }
+    .post p{ margin:0 0 1.05rem 0; }
+    .post hr{ border:0; height:1px; background:var(--line); margin:2rem 0; }
+    .callout{ background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 65%); border:1px solid color-mix(in oklab, var(--accent) 25%, var(--line)); border-left:4px solid var(--accent); padding:1rem 1.1rem; border-radius:var(--radius); margin:1.25rem 0; }
+    .author{ background: var(--surface); border:1px solid var(--line); border-radius: var(--radius); padding:1rem; margin:2rem 0 0; box-shadow: var(--shadow); }
+    .author h4{ margin:0 0 .25rem 0; font-size:1.05rem; font-weight:800; }
+    .author p{ margin:0; color:var(--muted); }
+    .cta{ margin-top:2rem; padding:1.25rem; border-radius:var(--radius); background: linear-gradient(180deg, color-mix(in oklab, var(--accent-2) 12%, transparent), transparent 65%); border:1px solid color-mix(in oklab, var(--accent-2) 30%, var(--line)); }
+
+    /* 🔹 Image size control */
+    .post img{
+      max-width:600px;   /* limit to 600px */
+      width:100%;        /* responsive on small screens */
+      display:block;     /* so margin auto works */
+      margin:1rem auto;  /* center images */
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+
+    /* Navbar */
+    nav{
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .nav-container{
+      max-width:1200px;
+      margin:0 auto;
+      padding:.75rem 1rem;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .nav-brand{ font-weight:800; font-size:1.2rem; color:var(--accent); text-decoration:none; }
+    .nav-links{ display:flex; gap:1rem; }
+    .nav-links a{ text-decoration:none; color:var(--text); font-weight:500; transition:.2s; }
+    .nav-links a:hover{ color:var(--accent); }
+
+    /* Footer */
+    footer{
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      margin-top:3rem;
+      padding:1.25rem;
+      text-align:center;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+    footer a{ color:var(--accent); text-decoration:none; }
+    footer a:hover{ text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="nav-brand">Macadamia 101</a>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Food</a>
+        <a href="#">Beauty</a>
+        <a href="#">Wellness</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">Macadamia Sustainable Lifestyle: A Guide to Health, Beauty, and Wellness</h1>
+        <p class="post-subtitle lead">How macadamias connect nutrition, heritage, beauty, wellness, and community.</p>
+        <div class="post-meta">
+          <span class="badge">Macadamia Sustainable Lifestyle</span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Macadamias in Everyday Food</h2>
+        <figure>
+          <img src="img/macadamia-scoop.jpg" alt="Scoop in a bulk bin filled with roasted macadamia nuts at a market" />
+          <figcaption>Macadamias ready to be enjoyed in bulk bins at a market.</figcaption>
+        </figure>
+        <p>From creamy macadamia milk to crunchy toppings on salads, these nuts bring both nutrition and versatility to the kitchen. 
+            A macadamia sustainable lifestyle means embracing foods that are nourishing and environmentally conscious. 
+            Because macadamias are packed with healthy fats, fiber, and antioxidants, they make everyday meals more balanced while reminding us that sustainability starts with 
+            simple choices at the table.</p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>A Rich History Rooted in the Earth</h2>
+        <p>Macadamias are native to Australia, where Indigenous communities valued them for their nutrition long before they became globally popular. 
+            Understanding this heritage deepens the meaning of a macadamia sustainable lifestyle, connecting us to traditions of respecting the land and its gifts. 
+            Today, their cultivation continues to evolve, blending cultural history with modern sustainable farming practices.</p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Beauty Benefits of Macadamia Oil</h2>
+        <p>Beyond the kitchen, macadamias shine in beauty and skincare. Macadamia oil is known for its ability to moisturize, repair, and protect skin and hair. 
+            Choosing natural products like these reflects a macadamia sustainable lifestyle because it prioritizes gentle, eco-friendly solutions over synthetic alternatives. 
+            It’s a way to care for yourself while staying aligned with environmental values.</p>
+      </section>
+
+      <div class="callout">
+        <p><strong>Tip:</strong> Look for cold-pressed macadamia oil and brands that publish sourcing details or certifications.</p>
+      </div>
+
+      <hr />
+
+      <section>
+        <h2>Wellness and Mindful Living</h2>
+        <p>Living a sustainable lifestyle is also about mindfulness, making choices that balance personal well-being with global impact. 
+            Macadamias fit perfectly into this mindset: they fuel the body with slow-burning energy while also supporting eco-conscious agriculture. 
+            Embracing a macadamia sustainable lifestyle means seeing wellness not as a trend but as a holistic practice of eating, caring, and living in 
+            harmony with nature.</p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Culture and Community Connections</h2>
+        <p>Macadamias aren’t just about individual benefits they also represent community, tradition, and shared values. 
+            Around the world, farmers, artisans, and small businesses rely on macadamias as part of their livelihoods, creating bonds between growers and consumers. 
+            Supporting fair trade and sustainable sourcing is a meaningful part of living a macadamia sustainable lifestyle, because it ensures that 
+            the people behind the harvest also thrive. By choosing consciously, we celebrate not only the nut itself but also the communities that keep its 
+            story alive.</p>
+        
+        <figure>
+          <img src="img/macadamia-raw.jpg" alt="Fresh raw macadamia nuts in their green husks on a dark surface" />
+          <figcaption>Macadamias in their natural green husks, freshly harvested.</figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Conclusion: Living the Macadamia Way</h2>
+        <p>A macadamia sustainable lifestyle is more than just enjoying a delicious nut, it’s about embracing food that nourishes, 
+            respecting cultural history, choosing beauty products that care for both body and planet, and supporting communities worldwide. 
+            By bringing macadamias into your daily life, you’re making a conscious choice to live with more balance, intention, and connection. 
+            Small steps, like adding macadamia milk to your coffee or choosing fair-trade oils, can grow into meaningful habits that create a 
+            healthier you and a healthier world.</p>
+      </section>
+
+      <section class="cta">
+        <p><strong>Liked this guide?</strong> Try swapping macadamia milk into your morning coffee this week and share the experience with someone close.</p>
+      </section>
+
+      <section class="author">
+        <h4>Mia Stun - Your Author</h4>
+        <p>Hi! I’m Mia Stun, a writer who combines my background in sustainability studies with a personal passion for food and wellness. Over the years, I’ve explored how natural ingredients can support health, beauty, and conscious living. My work is grounded in research on sustainable practices and food culture, which I translate into clear, practical insights for everyday life. By sharing well-sourced information and drawing connections between science, tradition, and lifestyle, I aim to offer you knowledge that you can rely on. Every article I write is rooted in honesty and care, crafted to offer not just reliable knowledge but also a touch of inspiration, a gentle reminder that the choices we make each day can be both nourishing and beautiful.</p>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Macadamia 101 · <a href="#">Privacy Policy</a> · <a href="#">Contact</a></p>
+  </footer>
+</body>
+</html>

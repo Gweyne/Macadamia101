@@ -1,165 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6BQ8Q42XZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Y6BQ8Q42XZ');
   </script>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="3ry5To51uTKYUSQ7MD5O0ZUfKmLHaGTRYQtza5B4_Hw" />
 
   <title>Macadamia Beauty | Natural Skin & Hair with Macadamia Oil</title>
-
-  <meta name="description" content="Gentle, skin-compatible routines using cold-pressed macadamia oil. Learn how to pick quality oils and keep face, body, and hair care simple." />
-  <meta name="keywords" content="macadamia beauty, macadamia oil skin, macadamia hair oil, cold-pressed macadamia oil, natural skincare, minimalist routine" />
-
+  <meta name="description" content="Discover the natural glow of macadamia nut oil: deep hydration, barrier support, antioxidant protection, and soothing care for sensitive skin." />
+  <meta name="keywords" content="macadamia beauty, macadamia oil skin, macadamia oil benefits, natural skincare, antioxidant oil, sensitive skin, hydration" />
   <link rel="canonical" href="https://macadamia101.netlify.app/beauty" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
+  <!-- Theme / Styles -->
+  <style>
     :root{
       /* 🍯 Macadamia Cream Theme — warm, organic tones */
-      --bg: #faf6f1;        /* soft creamy white background */
-      --surface: #f5ede3;   /* warm off-white for cards/nav/footer */
-      --text: #2f2a24;      /* dark brown-gray for comfortable reading */
-      --muted: #7a6f63;     /* warm taupe-gray for subtitles and metadata */
-      --accent: #5f8a72;    /* earthy green for buttons, highlights */
-      --accent-2: #b9916a;  /* nutty brown secondary accent */
-      --line: #e0d7cc;      /* light beige border lines */
-      --shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      --radius: 16px;
-      --maxw: 800px;
+      --bg:#faf6f1; --surface:#f5ede3; --text:#2f2a24; --muted:#7a6f63;
+      --accent:#5f8a72; --accent-2:#b9916a; --line:#e0d7cc;
+      --shadow:0 10px 20px rgba(0,0,0,.05);
+      --radius:16px; --maxw:800px;
       --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       --h1: clamp(2rem, 3vw + 1rem, 3rem);
       --h2: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
-      --body: 1.05rem;
-      --lh: 1.75;
+      --body:1.05rem; --lh:1.75;
     }
     @media (prefers-color-scheme: dark){
       :root{
-        --bg: #0b0f0d;
-        --text: #e5e7eb;
-        --muted: #9aa3af;
-        --accent: #71c39a;
-        --accent-2: #d8b8a0;
-        --surface: #101513;
-        --line: #1f2a24;
-        --shadow: 0 10px 24px rgba(0,0,0,.45);
+        --bg:#0b0f0d; --text:#e5e7eb; --muted:#9aa3af; --accent:#71c39a;
+        --accent-2:#d8b8a0; --surface:#101513; --line:#1f2a24;
+        --shadow:0 10px 24px rgba(0,0,0,.45);
       }
     }
-    body{
-      margin:0; padding:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family: var(--font-sans);
-      font-size: var(--body);
-      line-height: var(--lh);
-    }
-    .container{ max-width: 1200px; margin-inline:auto; padding: clamp(16px,3vw,40px); }
-    .post{ max-width: var(--maxw); margin-inline:auto; }
+    body{ margin:0; padding:0; background:var(--bg); color:var(--text);
+      font-family:var(--font-sans); font-size:var(--body); line-height:var(--lh); }
+    .container{ max-width:1200px; margin-inline:auto; padding:clamp(16px,3vw,40px); }
+    .post{ max-width:var(--maxw); margin-inline:auto; }
     .post-header{ margin-bottom:1.5rem; }
-    .post-title{ font-size: var(--h1); line-height:1.15; font-weight:800; margin:0 0 .5rem 0; }
+    .post-title{ font-size:var(--h1); line-height:1.15; font-weight:800; margin:0 0 .5rem 0; }
     .post-subtitle{ color:var(--muted); font-size:1rem; margin:0 0 .5rem 0; }
     .post-meta{ display:flex; gap:.75rem; flex-wrap:wrap; color:var(--muted); font-size:.95rem; }
-    .badge{ display:inline-flex; align-items:center; gap:.5ch; padding:.35rem .6rem; font-size:.85rem; border-radius:999px; background: color-mix(in oklab, var(--accent) 12%, transparent); color: color-mix(in oklab, var(--accent) 40%, var(--text)); border:1px solid color-mix(in oklab, var(--accent) 30%, var(--line)); }
-    .post h2{ font-size: var(--h2); margin:2.2rem 0 .75rem; font-weight:750; padding-bottom:.4rem; border-bottom:2px solid color-mix(in oklab, var(--accent) 30%, transparent); }
+    .badge{ display:inline-flex; align-items:center; gap:.5ch; padding:.35rem .6rem; font-size:.85rem; border-radius:999px;
+      background: color-mix(in oklab, var(--accent) 12%, transparent);
+      color: color-mix(in oklab, var(--accent) 40%, var(--text));
+      border:1px solid color-mix(in oklab, var(--accent) 30%, var(--line)); }
+    .post h2{ font-size:var(--h2); margin:2.2rem 0 .75rem; font-weight:750;
+      padding-bottom:.4rem; border-bottom:2px solid color-mix(in oklab, var(--accent) 30%, transparent); }
     .post p{ margin:0 0 1.05rem 0; }
     .post hr{ border:0; height:1px; background:var(--line); margin:2rem 0; }
-    .callout{ background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 65%); border:1px solid color-mix(in oklab, var(--accent) 25%, var(--line)); border-left:4px solid var(--accent); padding:1rem 1.1rem; border-radius:var(--radius); margin:1.25rem 0; }
-    .author{ background: var(--surface); border:1px solid var(--line); border-radius: var(--radius); padding:1rem; margin:2rem 0 0; box-shadow: var(--shadow); }
+    .callout{ background:linear-gradient(180deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 65%);
+      border:1px solid color-mix(in oklab, var(--accent) 25%, var(--line));
+      border-left:4px solid var(--accent); padding:1rem 1.1rem; border-radius:var(--radius); margin:1.25rem 0; }
+    .author{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+      padding:1rem; margin:2rem 0 0; box-shadow:var(--shadow); }
     .author h4{ margin:0 0 .25rem 0; font-size:1.05rem; font-weight:800; }
     .author p{ margin:0; color:var(--muted); }
-    .cta{ margin-top:2rem; padding:1.25rem; border-radius:var(--radius); background: linear-gradient(180deg, color-mix(in oklab, var(--accent-2) 12%, transparent), transparent 65%); border:1px solid color-mix(in oklab, var(--accent-2) 30%, var(--line)); }
+    .cta{ margin-top:2rem; padding:1.25rem; border-radius:var(--radius);
+      background:linear-gradient(180deg, color-mix(in oklab, var(--accent-2) 12%, transparent), transparent 65%);
+      border:1px solid color-mix(in oklab, var(--accent-2) 30%, var(--line)); }
 
-    /* 🔹 Image size control */
-    .post img{
-      max-width:600px;   /* limit to 600px */
-      width:100%;        /* responsive on small screens */
-      display:block;     /* so margin auto works */
-      margin:1rem auto;  /* center images */
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-    }
+    /* Images */
+    .post img{ max-width:600px; width:100%; display:block; margin:1rem auto; border-radius:var(--radius); box-shadow:var(--shadow); }
 
     /* Navbar */
-    nav{
-      background: var(--surface);
-      border-bottom: 1px solid var(--line);
-      box-shadow: var(--shadow);
-    }
-    .nav-container{
-      max-width:1200px;
-      margin:0 auto;
-      padding:.75rem 1rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+    nav{ background:var(--surface); border-bottom:1px solid var(--line); box-shadow:var(--shadow); }
+    .nav-container{ max-width:1200px; margin:0 auto; padding:.75rem 1rem; display:flex; justify-content:space-between; align-items:center; }
     .nav-brand{ font-weight:800; font-size:1.2rem; color:var(--accent); text-decoration:none; }
     .nav-links{ display:flex; gap:1rem; }
     .nav-links a{ text-decoration:none; color:var(--text); font-weight:500; transition:.2s; }
     .nav-links a:hover{ color:var(--accent); }
 
     /* Footer */
-    footer{
-      background: var(--surface);
-      border-top: 1px solid var(--line);
-      margin-top:3rem;
-      padding:1.25rem;
-      text-align:center;
-      color:var(--muted);
-      font-size:.9rem;
-    }
+    footer{ background:var(--surface); border-top:1px solid var(--line); margin-top:3rem; padding:1.25rem;
+      text-align:center; color:var(--muted); font-size:.9rem; }
     footer a{ color:var(--accent); text-decoration:none; }
     footer a:hover{ text-decoration:underline; }
   </style>
 
-    <meta property="og:title" content="Macadamia Food | Recipes, Tips & Sustainable Eating">
-    <meta property="og:description" content="Macadamia-forward recipes, easy swaps, and sustainable cooking tips.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://macadamia101.netlify.app/food">
-    <meta property="og:site_name" content="Macadamia 101">
-    <meta name="twitter:card" content="summary_large_image">
+  <!-- Social previews -->
+  <meta property="og:title" content="Macadamia Beauty | Natural Skin & Hair with Macadamia Oil">
+  <meta property="og:description" content="Deep hydration, barrier support, and antioxidant protection—discover the natural glow of macadamia nut oil.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://macadamia101.netlify.app/beauty">
+  <meta property="og:site_name" content="Macadamia 101">
+  <meta name="twitter:card" content="summary_large_image">
 
+  <!-- JSON-LD: Article (with credit) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"5 Remarkable Benefits of Macadamia Nut Oil for Radiant Skin",
+    "description":"Learn how macadamia nut oil nourishes, hydrates, and protects your skin through essential fatty acids and antioxidants.",
+    "author":{"@type":"Person","name":"Mia Stun"},
+    "isBasedOn":{"@type":"CreativeWork","url":"https://lamav.com/blogs/articles/5-benefits-of-macadamia-oil-for-your-skin?srsltid=AfmBOoocmlkkaOJI1ojVyGh6xaRJxDuG8en6c8FFx-zzyfbouIN4h65L","name":"La Mav — 5 Benefits of Macadamia Oil for Your Skin"},
+    "image":["https://macadamia101.netlify.app/img/macadamia-oil-beauty.jpg"],
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://macadamia101.netlify.app/beauty"},
+    "publisher":{"@type":"Organization","name":"Macadamia 101","logo":{"@type":"ImageObject","url":"https://macadamia101.netlify.app/img/logo.png"}},
+    "inLanguage":"en",
+    "datePublished":"2025-10-29",
+    "dateModified":"2025-10-29"
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://macadamia101.netlify.app/"},
+      {"@type":"ListItem","position":2,"name":"Beauty","item":"https://macadamia101.netlify.app/beauty"}
+    ]
+  }
+  </script>
 </head>
 
-
 <body>
-<nav>
-<div class="nav-container">
-<a href="index.html" class="nav-brand">Macadamia 101</a>
-<div class="nav-links">
-<a href="food.html" class="active">Food</a>
-<a href="beauty.html">Beauty</a>
-<a href="wellness.html">Wellness</a>
-<a href="community.html">Community</a>
+  <!-- Nav -->
+  <nav>
+    <div class="nav-container">
+      <a href="./index.html" class="nav-brand">Macadamia 101</a>
+      <div class="nav-links">
+        <a href="./food.html">Food</a>
+        <a href="./beauty.html" class="active">Beauty</a>
+        <a href="./wellness.html">Wellness</a>
+        <a href="./community.html">Community</a>
+        <a href="./about.html">About</a>
+      </div>
+    </div>
+  </nav>
 
-</div>
-</div>
-</nav>
+  <!-- Beauty Banner -->
+  <section class="banner" style="
+    background: linear-gradient(180deg, #f8f5f1, #ffffff);
+    display:flex; align-items:center; justify-content:center; flex-direction:column;
+    text-align:center; padding:4rem 1rem; border-bottom:1px solid #e5e7eb;">
+    <div style="max-width:800px; margin:0 auto;">
+      <h1 style="font-size:clamp(2.5rem,4vw,3.5rem); font-weight:800; color:#4b8b6a; margin:0;">
+        Macadamia Beauty
+      </h1>
+      <p style="font-size:1.15rem; color:#6b7280; max-width:60ch; margin:.85rem auto 1.5rem;">
+        Discover the natural glow of macadamia nut oil — nourishing, restorative, and sustainably sourced for your everyday skincare ritual.
+      </p>
+      <a href="#beauty-benefits" style="display:inline-block; background:#4b8b6a; color:white; padding:.8rem 1.4rem; border-radius:8px; text-decoration:none; font-weight:600;">
+        Explore the Benefits
+      </a>
+    </div>
+  </section>
 
+  <!-- Beauty Content -->
+  <section id="beauty-benefits" class="container" aria-label="Beauty Benefits">
+    <article class="post" style="max-width:var(--maxw); margin-inline:auto;">
+      <h1 class="post-title">5 Remarkable Benefits of Macadamia Nut Oil for Radiant Skin</h1>
+      <p class="post-subtitle">
+        Known as one of nature’s most luxurious oils, macadamia nut oil nourishes the skin with essential fatty acids, vitamins, and antioxidants.
+        Here’s how this golden oil can upgrade your daily routine.
+      </p>
 
-<main class="container">
-<h1>Macadamia Food</h1>
-<p>Macadamias bring nutrition, texture, and sustainability to your kitchen. Explore mindful recipes and eco-friendly cooking ideas.</p>
-<a href="/beauty.html">Next: Beauty →</a>
-</main>
+      <section>
+        <h2>Smoother, Softer Skin</h2>
+        <p>Rich in <strong>oleic acid</strong> (carries powerful emoilient qualities that plays into softening and hydrating the skin) and barrier-loving lipids, 
+            macadamia oil helps fortify your skin’s natural shield. 
+            It replenishes lost moisture and leaves skin feeling supple, 
+            smooth, and resilient. Great for dry or flaky areas!</p>
+      </section>
 
+      <section>
+        <h2>Deep, Long-Lasting Hydration</h2>
+        <p>Macadamia oil forms a light, breathable layer that 
+            helps lock in moisture. 
+            With naturally occurring <strong>vitamin E</strong>, 
+            it supports water retention in your skin, aiding in 
+            lasting hydration and a healthy glow.</p>
+      </section>
 
-<footer>
-<p>© 2025 Macadamia 101 · Created by Mia Stun · <a href="mailto:miastun.macadamia@gmail.com">Contact</a> · <a href="https://www.iubenda.com/privacy-policy/34229277" title="Privacy Policy">Privacy Policy</a> · <a href="https://www.iubenda.com/privacy-policy/34229277/cookie-policy" title="Cookie Policy">Cookie Policy</a></p>
-<div class="social-icons">
-<a href="https://www.instagram.com/mia_macadamia101/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-<a href="https://ca.pinterest.com/miastunmacadamia/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-</div>
-</footer>
+      <section>
+        <h2>Calms Sensitive or Irritated Skin</h2>
+        <p>Balanced <strong>Omega-3 and Omega-6</strong> 
+            fatty acids help soothe redness and irritation. 
+            If you’re dealing with sensitivity, eczema, or rosacea, 
+            this gentle oil can help restore comfort and balance.</p>
+      </section>
+
+      <section>
+        <h2>Antioxidant Defense</h2>
+        <p>Macadamia oil contains powerful 
+            <strong>antioxidants</strong>, including 
+            <strong>squalene</strong> a compound that mimics 
+            the skin’s own lipids. These defenders help reduce 
+            oxidative stress and soften the look of early aging.</p>
+      </section>
+
+      <section>
+        <h2>Youthful Elasticity & Bounce</h2>
+        <p>With abundant <strong>palmitoleic</strong> 
+            and <strong>linoleic acids</strong>, macadamia oil 
+            supports cell renewal and elasticity. Over time, it 
+            helps minimize fine lines while maintaining a hydrated, 
+            lifted look. Ideal for dry or mature skin.</p>
+      </section>
+
+      <div class="callout">
+        <p><strong>Beauty tip:</strong> Add a few drops of cold-pressed macadamia oil onto your body after moisturizing, or mix it with your chosen body lotion for a silky finish.</p>
+      </div>
+
+      <section>
+        <h2>Final Thoughts</h2>
+        <p>Bringing <strong>macadamia nut oil</strong> into your skincare 
+            is more than a beauty trend, it’s a mindful choice. 
+            With each application you’re hydrating, protecting, 
+            and restoring your skin using ingredients that work 
+            in harmony with nature.</p>
+      </section>
+
+      <!-- Source credit -->
+      <p style="font-size:0.9rem; color:var(--muted); margin-top:1.5rem;">
+        Information adapted and summarized from
+        <a href="https://lamav.com/blogs/articles/5-benefits-of-macadamia-oil-for-your-skin?srsltid=AfmBOoocmlkkaOJI1ojVyGh6xaRJxDuG8en6c8FFx-zzyfbouIN4h65L"
+           target="_blank" rel="noopener noreferrer"
+           style="color:var(--accent); text-decoration:none;">
+           La Mav — 5 Benefits of Macadamia Oil for Your Skin
+        </a>. All rights belong to the original author.
+      </p>
+
+      <!-- Next link -->
+      <p style="text-align:right; margin-top:2rem;">
+        <a href="./wellness.html" style="color:var(--accent); font-weight:600; text-decoration:none;">Next: Wellness →</a>
+      </p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Macadamia 101 · Created by Mia Stun ·
+      <a href="mailto:miastun.macadamia@gmail.com">Contact</a> ·
+      <a href="https://www.iubenda.com/privacy-policy/34229277" title="Privacy Policy">Privacy Policy</a> ·
+      <a href="https://www.iubenda.com/privacy-policy/34229277/cookie-policy" title="Cookie Policy">Cookie Policy</a>
+    </p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mia_macadamia101/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://ca.pinterest.com/miastunmacadamia/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+    </div>
+  </footer>
 </body>
 </html>

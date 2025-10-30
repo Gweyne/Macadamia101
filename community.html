@@ -1,164 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6BQ8Q42XZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Y6BQ8Q42XZ');
   </script>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="3ry5To51uTKYUSQ7MD5O0ZUfKmLHaGTRYQtza5B4_Hw" />
 
-  <title>Macadamia Food | Recipes, Tips & Sustainable Eating</title>
-
-  <meta name="description" content="Macadamia-forward recipes, easy swaps (milk, oil, pesto), and sustainable cooking tips to make everyday meals creamy, simple, and eco-friendly." />
-  <meta name="keywords" content="macadamia recipes, macadamia milk, macadamia oil cooking, sustainable eating, macadamia pesto, eco-friendly recipes" />
-
-  <link rel="canonical" href="https://macadamia101.netlify.app/food" />
+  <title>Macadamia Community | Sustainable Sourcing & Fair Trade</title>
+  <meta name="description" content="How macadamia sustainability thrives through ethical sourcing, fair trade, and land-friendly farming—plus ways to support growers and local makers." />
+  <meta name="keywords" content="macadamia community, sustainable sourcing, fair trade, ethical macadamias, regenerative farming, macadamia growers" />
+  <link rel="canonical" href="https://macadamia101.netlify.app/community" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
+  <!-- Theme / Styles -->
+  <style>
     :root{
       /* 🍯 Macadamia Cream Theme — warm, organic tones */
-      --bg: #faf6f1;        /* soft creamy white background */
-      --surface: #f5ede3;   /* warm off-white for cards/nav/footer */
-      --text: #2f2a24;      /* dark brown-gray for comfortable reading */
-      --muted: #7a6f63;     /* warm taupe-gray for subtitles and metadata */
-      --accent: #5f8a72;    /* earthy green for buttons, highlights */
-      --accent-2: #b9916a;  /* nutty brown secondary accent */
-      --line: #e0d7cc;      /* light beige border lines */
-      --shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      --radius: 16px;
-      --maxw: 800px;
+      --bg:#faf6f1; --surface:#f5ede3; --text:#2f2a24; --muted:#7a6f63;
+      --accent:#5f8a72; --accent-2:#b9916a; --line:#e0d7cc;
+      --shadow:0 10px 20px rgba(0,0,0,.05);
+      --radius:16px; --maxw:800px;
       --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       --h1: clamp(2rem, 3vw + 1rem, 3rem);
       --h2: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
-      --body: 1.05rem;
-      --lh: 1.75;
+      --body:1.05rem; --lh:1.75;
     }
     @media (prefers-color-scheme: dark){
       :root{
-        --bg: #0b0f0d;
-        --text: #e5e7eb;
-        --muted: #9aa3af;
-        --accent: #71c39a;
-        --accent-2: #d8b8a0;
-        --surface: #101513;
-        --line: #1f2a24;
-        --shadow: 0 10px 24px rgba(0,0,0,.45);
+        --bg:#0b0f0d; --text:#e5e7eb; --muted:#9aa3af; --accent:#71c39a;
+        --accent-2:#d8b8a0; --surface:#101513; --line:#1f2a24;
+        --shadow:0 10px 24px rgba(0,0,0,.45);
       }
     }
-    body{
-      margin:0; padding:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family: var(--font-sans);
-      font-size: var(--body);
-      line-height: var(--lh);
-    }
-    .container{ max-width: 1200px; margin-inline:auto; padding: clamp(16px,3vw,40px); }
-    .post{ max-width: var(--maxw); margin-inline:auto; }
+    body{ margin:0; padding:0; background:var(--bg); color:var(--text);
+      font-family:var(--font-sans); font-size:var(--body); line-height:var(--lh); }
+    .container{ max-width:1200px; margin-inline:auto; padding:clamp(16px,3vw,40px); }
+    .post{ max-width:var(--maxw); margin-inline:auto; }
     .post-header{ margin-bottom:1.5rem; }
-    .post-title{ font-size: var(--h1); line-height:1.15; font-weight:800; margin:0 0 .5rem 0; }
+    .post-title{ font-size:var(--h1); line-height:1.15; font-weight:800; margin:0 0 .5rem 0; }
     .post-subtitle{ color:var(--muted); font-size:1rem; margin:0 0 .5rem 0; }
     .post-meta{ display:flex; gap:.75rem; flex-wrap:wrap; color:var(--muted); font-size:.95rem; }
-    .badge{ display:inline-flex; align-items:center; gap:.5ch; padding:.35rem .6rem; font-size:.85rem; border-radius:999px; background: color-mix(in oklab, var(--accent) 12%, transparent); color: color-mix(in oklab, var(--accent) 40%, var(--text)); border:1px solid color-mix(in oklab, var(--accent) 30%, var(--line)); }
-    .post h2{ font-size: var(--h2); margin:2.2rem 0 .75rem; font-weight:750; padding-bottom:.4rem; border-bottom:2px solid color-mix(in oklab, var(--accent) 30%, transparent); }
+    .badge{ display:inline-flex; align-items:center; gap:.5ch; padding:.35rem .6rem; font-size:.85rem; border-radius:999px;
+      background: color-mix(in oklab, var(--accent) 12%, transparent);
+      color: color-mix(in oklab, var(--accent) 40%, var(--text));
+      border:1px solid color-mix(in oklab, var(--accent) 30%, var(--line)); }
+    .post h2{ font-size:var(--h2); margin:2.2rem 0 .75rem; font-weight:750;
+      padding-bottom:.4rem; border-bottom:2px solid color-mix(in oklab, var(--accent) 30%, transparent); }
     .post p{ margin:0 0 1.05rem 0; }
     .post hr{ border:0; height:1px; background:var(--line); margin:2rem 0; }
-    .callout{ background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 65%); border:1px solid color-mix(in oklab, var(--accent) 25%, var(--line)); border-left:4px solid var(--accent); padding:1rem 1.1rem; border-radius:var(--radius); margin:1.25rem 0; }
-    .author{ background: var(--surface); border:1px solid var(--line); border-radius: var(--radius); padding:1rem; margin:2rem 0 0; box-shadow: var(--shadow); }
+    .callout{ background:linear-gradient(180deg, color-mix(in oklab, var(--accent) 8%, transparent), transparent 65%);
+      border:1px solid color-mix(in oklab, var(--accent) 25%, var(--line));
+      border-left:4px solid var(--accent); padding:1rem 1.1rem; border-radius:var(--radius); margin:1.25rem 0; }
+    .author{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+      padding:1rem; margin:2rem 0 0; box-shadow:var(--shadow); }
     .author h4{ margin:0 0 .25rem 0; font-size:1.05rem; font-weight:800; }
     .author p{ margin:0; color:var(--muted); }
-    .cta{ margin-top:2rem; padding:1.25rem; border-radius:var(--radius); background: linear-gradient(180deg, color-mix(in oklab, var(--accent-2) 12%, transparent), transparent 65%); border:1px solid color-mix(in oklab, var(--accent-2) 30%, var(--line)); }
 
-    /* 🔹 Image size control */
-    .post img{
-      max-width:600px;   /* limit to 600px */
-      width:100%;        /* responsive on small screens */
-      display:block;     /* so margin auto works */
-      margin:1rem auto;  /* center images */
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-    }
+    /* Images */
+    .post img{ max-width:600px; width:100%; display:block; margin:1rem auto; border-radius:var(--radius); box-shadow:var(--shadow); }
 
     /* Navbar */
-    nav{
-      background: var(--surface);
-      border-bottom: 1px solid var(--line);
-      box-shadow: var(--shadow);
-    }
-    .nav-container{
-      max-width:1200px;
-      margin:0 auto;
-      padding:.75rem 1rem;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+    nav{ background:var(--surface); border-bottom:1px solid var(--line); box-shadow:var(--shadow); }
+    .nav-container{ max-width:1200px; margin:0 auto; padding:.75rem 1rem; display:flex; justify-content:space-between; align-items:center; }
     .nav-brand{ font-weight:800; font-size:1.2rem; color:var(--accent); text-decoration:none; }
     .nav-links{ display:flex; gap:1rem; }
     .nav-links a{ text-decoration:none; color:var(--text); font-weight:500; transition:.2s; }
     .nav-links a:hover{ color:var(--accent); }
 
     /* Footer */
-    footer{
-      background: var(--surface);
-      border-top: 1px solid var(--line);
-      margin-top:3rem;
-      padding:1.25rem;
-      text-align:center;
-      color:var(--muted);
-      font-size:.9rem;
-    }
+    footer{ background:var(--surface); border-top:1px solid var(--line); margin-top:3rem; padding:1.25rem;
+      text-align:center; color:var(--muted); font-size:.9rem; }
     footer a{ color:var(--accent); text-decoration:none; }
     footer a:hover{ text-decoration:underline; }
   </style>
 
-    <meta property="og:title" content="Macadamia Food | Recipes, Tips & Sustainable Eating">
-    <meta property="og:description" content="Macadamia-forward recipes, easy swaps, and sustainable cooking tips.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://macadamia101.netlify.app/food">
-    <meta property="og:site_name" content="Macadamia 101">
-    <meta name="twitter:card" content="summary_large_image">
-
+  <!-- Social previews -->
+  <meta property="og:title" content="Macadamia Community | Sustainable Sourcing & Fair Trade">
+  <meta property="og:description" content="See how ethical sourcing and fair trade strengthen communities behind macadamias—and how your choices help.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://macadamia101.netlify.app/community">
+  <meta property="og:site_name" content="Macadamia 101">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 
-
 <body>
-<nav>
-<div class="nav-container">
-<a href="index.html" class="nav-brand">Macadamia 101</a>
-<div class="nav-links">
-<a href="food.html" class="active">Food</a>
-<a href="beauty.html">Beauty</a>
-<a href="wellness.html">Wellness</a>
-<a href="community.html">Community</a>
-</div>
-</div>
-</nav>
+  <!-- Nav -->
+  <nav>
+    <div class="nav-container">
+      <a href="./index.html" class="nav-brand">Macadamia 101</a>
+      <div class="nav-links">
+        <a href="./food.html">Food</a>
+        <a href="./beauty.html">Beauty</a>
+        <a href="./wellness.html">Wellness</a>
+        <a href="./community.html" class="active">Community</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Community Banner -->
+  <section class="banner" style="
+    background: linear-gradient(180deg,#f3f7f4,#ffffff);
+    display:flex; align-items:center; justify-content:center; flex-direction:column;
+    text-align:center; padding:4rem 1rem; border-bottom:1px solid #e5e7eb;">
+    <div style="max-width:800px; margin:0 auto;">
+      <h1 style="font-size:clamp(2.5rem,4vw,3.5rem); font-weight:800; color:#4b8b6a; margin:0;">
+        Macadamia Community
+      </h1>
+      <p style="font-size:1.15rem; color:#6b7280; max-width:60ch; margin:.85rem auto 1.5rem;">
+        Ethical sourcing, fair trade, and land-friendly farming, how every choice connects us to the people and places behind macadamias.
+      </p>
+      <a href="#sustainable-sourcing" style="display:inline-block; background:#4b8b6a; color:white; padding:.8rem 1.4rem; border-radius:8px; text-decoration:none; font-weight:600;">
+        Learn More
+      </a>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Anecdote -->
+    <section aria-label="Personal Anecdote">
+      <article class="post">
+        <h2>A Conversation Under the Macadamia Trees</h2>
+        <p>
+          During a visit to a local sustainability fair, I met a grower who spoke passionately about raising <strong>macadamias</strong> without harming the soil or surrounding wildlife.
+          He described each tree as part of a living ecosystem pollinated by native bees, nourished by compost, and protected through water-smart irrigation.
+          What stayed with me wasn’t only the science, but the stewardship. It reminded me that sustainability is as much about relationships as it is about resources. It emphasized the bond between the people who grow our food and those who enjoy it.
+        </p>
+      </article>
+    </section>
+
+    <!-- Sustainable Sourcing & Fair Trade -->
+    <section id="sustainable-sourcing" class="container" aria-label="Sustainable Sourcing & Fair Trade">
+      <article class="post" style="max-width: var(--maxw); margin-inline:auto;">
+        <h1 class="post-title">Sustainable Sourcing & Fair Trade in the Macadamia Industry</h1>
+        <p class="post-subtitle">
+          Behind every crunchy macadamia lies a story of land, people, and responsible practices. Here’s how thoughtful sourcing supports farmers, communities, and the planet.
+        </p>
+
+        <section>
+          <h2>Farming with Respect for the Land</h2>
+          <p>
+            Australian Premium Macadamias highlights a grower-led approach to sustainability. Prioritizing soil health, biodiversity, and careful resource use across their orchards and partner farms.
+            Choosing macadamias from growers who follow land-friendly methods means supporting a future where quality produce and healthy ecosystems thrive together.
+          </p>
+        </section>
+
+        <section>
+          <h2>Transparent Supply, Fair Value</h2>
+          <p>
+            When suppliers maintain clear oversight from orchard to kernel, it strengthens product quality, traceability, and the ability for growers to share fair value for their crop.
+            That transparency gives consumers confidence in the origin and impact of what they buy.
+          </p>
+        </section>
+
+        <section>
+          <h2>Ethical Standards & Partnerships</h2>
+          <p>
+            Many supply chains work with global partners who undergo ethical trade checks and adopt responsible sourcing standards.
+            Supporting brands that publish their audits, certifications, or sustainability reports is a practical way to vote for fair labour and resilient communities.
+          </p>
+        </section>
+
+        <div class="callout">
+          <p><strong>How you can help:</strong> Look for signals like “grown sustainably,” “ethical trade,” or “farm-to-table supply chain.” These reflect real commitments and not just marketing language.</p>
+        </div>
+
+        <section>
+          <h2>Why It Matters</h2>
+          <p>
+            Sustaining the macadamia industry isn’t just about preserving one nut, it’s about protecting ecosystems, safeguarding livelihoods, and nurturing a community of conscious consumers. Each mindful choice sends a ripple outward.
+          </p>
+        </section>
 
 
-<main class="container">
-<h1>Macadamia Food</h1>
-<p>Macadamias bring nutrition, texture, and sustainability to your kitchen. Explore mindful recipes and eco-friendly cooking ideas.</p>
-<a href="/beauty.html">Next: Beauty →</a>
-</main>
+        <section>
+        <article class="post">
+        <h2>Final Thoughts</h2>
+        <p>
+          Exploring the story of <strong>macadamia sustainability</strong> reveals how every harvest and every purchase is part of a bigger narrativen one rooted in care, patience, and respect for the planet.
+          From land friendly farming to fair trade, macadamias offer a model for how communities can thrive while giving back to nature.
+        </p>
+        <p>
+          Supporting transparent, sustainable growers isn’t just a consumer choice, it’s an act of community. Each conscious purchase strengthens a global network working toward balance, nourishment, and a more mindful way of living.
+        </p>
+        </article>
+        </section>
 
+        <p style="font-size:0.9rem; color:var(--muted); margin-top:1rem;">
+          Information adapted from
+          <a href="https://www.australianpremiummacadamias.com.au/sustainability" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:none;">
+            Australian Premium Macadamias: Sustainability
+          </a>. All rights belong to the original author.
+        </p>
+      </article>
+    </section>
 
-<footer>
-<p>© 2025 Macadamia 101 · Created by Mia Stun · <a href="mailto:miastun.macadamia@gmail.com">Contact</a> · <a href="https://www.iubenda.com/privacy-policy/34229277" title="Privacy Policy">Privacy Policy</a> · <a href="https://www.iubenda.com/privacy-policy/34229277/cookie-policy" title="Cookie Policy">Cookie Policy</a></p>
-<div class="social-icons">
-<a href="https://www.instagram.com/mia_macadamia101/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-<a href="https://ca.pinterest.com/miastunmacadamia/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-</div>
-</footer>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Macadamia 101 · Created by Mia Stun ·
+      <a href="mailto:miastun.macadamia@gmail.com">Contact</a> ·
+      <a href="https://www.iubenda.com/privacy-policy/34229277" title="Privacy Policy">Privacy Policy</a> ·
+      <a href="https://www.iubenda.com/privacy-policy/34229277/cookie-policy" title="Cookie Policy">Cookie Policy</a>
+    </p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mia_macadamia101/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://ca.pinterest.com/miastunmacadamia/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+    </div>
+  </footer>
 </body>
 </html>

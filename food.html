@@ -108,6 +108,23 @@
     .nav-links a{ text-decoration:none; color:var(--text); font-weight:500; transition:.2s; }
     .nav-links a:hover{ color:var(--accent); }
 
+    /* Leaderboard banner (728 x 90) */
+    .leaderboard-wrapper{
+    display:flex;
+    justify-content:center;
+    padding:1.5rem 1rem 0;  /* space below nav */
+    }
+
+    .leaderboard-banner img{
+    width:100%;
+    max-width:728px;
+    height:auto;               /* keeps it responsive */
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border:1px solid var(--line);
+    }
+
+
     /* Footer */
     footer{
       background: var(--surface);
@@ -155,6 +172,16 @@
     </div>
     </div>
     </nav>
+
+  <!-- Leaderboard Image Banner linking to Community page -->
+  <div class="leaderboard-wrapper">
+    <a href="community.html" class="leaderboard-banner"
+       aria-label="Visit the Macadamia101 Community page to learn more about growers, culture and sustainability.">
+      <img src="img/macadamia-banner.jpg"
+           alt="Macadamia101 community banner inviting you to explore stories about growers, culture and sustainability."
+           width="728" height="90" loading="lazy" decoding="async">
+    </a>
+  </div>
 
     <!-- Food Banner -->
 <section class="banner" style="

@@ -145,6 +145,46 @@
     border:1px solid var(--line);
     }
 
+    /* Square Banner (250x250) */
+    .square-banner-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem auto;
+    }
+
+    .square-banner {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    text-align: center;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .square-banner:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+    }
+
+    .square-banner h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin: 0 0 .5rem 0;
+    }
+
+    .square-banner p {
+    font-size: .95rem;
+    color: var(--muted);
+    margin: 0;
+    }
+
     /* Footer */
     footer{
       background: var(--surface);
@@ -356,6 +396,19 @@
       <section class="cta">
         <p><strong>Liked this guide?</strong> Try swapping macadamia milk into your morning coffee this week and share the experience with someone close.</p>
       </section>
+
+        <!-- Square Banner Image Linking to Wellness Page -->
+        <div class="square-banner-wrapper">
+        <a href="wellness.html" aria-label="Explore macadamia wellness tips and mindful living.">
+        <img src="img/macadamia-banner-square.jpg" 
+         alt="Explore macadamia wellness and mindful living" 
+         class="square-banner-image"
+         width="250" height="250"
+         loading="lazy" decoding="async">
+        </a>
+        </div>
+
+
 
       <section class="author" id="About">
         <h4>About the Author</h4>

@@ -197,6 +197,33 @@
     }
     footer a{ color:var(--accent); text-decoration:none; }
     footer a:hover{ text-decoration:underline; }
+
+    #whats-new-exciting {
+    text-align: center;
+    margin: 3rem auto;
+    }
+
+    .whats-new-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    }
+
+    .whats-new-item img {
+    width: 240px;        /* Ensures equal sizing */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    }
+
+    .whats-new-item figcaption {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    }
+
   </style>
 </head>
 <body>
@@ -215,7 +242,7 @@
     </div>
   </nav>
 
-  <!-- Leaderboard Image Banner linking to Community page -->
+  <!-- Leaderboard Image Banner linking to New Content -->
   <div class="leaderboard-wrapper">
     <a href="community.html" class="leaderboard-banner"
        aria-label="Visit the Macadamia101 Community page to learn more about growers, culture and sustainability.">
@@ -378,10 +405,137 @@
             Australian Premium Macadamias: Sustainability
           </a>. All rights belong to the original author.
         </p>
+      
+        <!-- Square Banner Image Linking to Wellness Page -->
+        <div class="square-banner-wrapper">
+        <a href="wellness.html" aria-label="Explore macadamia wellness tips and mindful living.">
+        <img src="img/macadamia-banner-square.jpg" 
+         alt="Explore macadamia wellness and mindful living" 
+         class="square-banner-image"
+         width="250" height="250"
+         loading="lazy" decoding="async">
+        </a>
+        </div>
 
       </section>
-
       <hr />
+
+      <!--NEW SECTION: What's New & Exciting -->
+      <section id="whats-new-exciting">
+        <h2> What's New &amp; Exciting!</h2>
+
+        <div class="whats-new-row">
+
+        <!-- 📰 ARTICLE IMAGE -->
+        <figure class="whats-new-item">
+        <a href="#queensland-global-opportunities" title="Read the full macadamia article review">
+        <img src="img/macadamia-article.jpg"
+          alt="Vintage newspaper-themed macadamia headline graphic"
+          title="Macadamia News Feature — Extra! Extra! The Nut Everyone’s Talking About">
+        </a>
+        <figcaption>Macadamia Article Feature</figcaption>
+        </figure>
+
+        <!-- 🌿 PICNIC IMAGE -->
+        <figure class="whats-new-item">
+        <a href="#picnic-memories" title="Read about my favourite macadamia picnic memory">
+        <img src="img/macadamia-memories.jpg"
+          alt="Picnic-themed macadamia collage with soft polaroid-style elements"
+          title="Macadamia Memories — Picnic Collage">
+        </a>
+        <figcaption>Macadamia Memories</figcaption>
+        </figure>
+
+
+        <!-- 🍪 SOCIAL MEDIA POST IMAGE -->
+        <figure class="whats-new-item">
+        <a href="food.html#recipe-macadamia-cookies" title="View the new macadamia recipe">
+        <img src="img/macadamia-new-recipe.jpg"
+           alt="Instagram-style post showcasing fresh white chocolate macadamia cookies with a blog announcement"
+           title="New on the Blog - White Chocolate Macadamia Cookie Recipe">
+        </a>
+        <figcaption>pssst New Post!</figcaption>
+        </figure>
+        
+  </div>
+</section>
+
+
+<!-- ===== NEWS ARTICLE REVIEW ===== -->
+  <section id="queensland-global-opportunities" class="news-article">
+    <h3>Queensland Macadamias: Cracking Open Global Opportunities</h3>
+      <p>
+        Queensland’s macadamia story feels like a perfect real-world example of what we explore here on
+        Macadamia101: how one small nut can carry huge potential for health, culture, and the economy.
+        In the article “Queensland macadamias cracking open global opportunities,” Trade and Investment
+        Queensland highlights how Queensland now produces nearly 70% of Australia’s macadamia crop and is
+        expanding globally as demand for nutrient-dense, premium snacks grows.
+      </p>
+
+      <p>
+        What stood out most is how the article connects macadamias with wellness and sustainable living.
+        Today’s consumers are looking for foods that nourish both personal health and the environment, making
+        macadamias a standout choice. The article reinforces this idea, emphasizing that macadamias are
+        becoming a global “hero ingredient” in snacks, desserts, and increasingly, plant-based milks and cheeses.
+      </p>
+
+      <p>
+        The story also highlights the importance of Queensland’s clean growing conditions and innovative
+        farming practices. With more than three-quarters of Australia’s crop now exported, international growth
+        is accelerating in markets like India, supported by events such as the Australian Macadamia Festival in Bengaluru.
+      </p>
+
+      <p>
+        Reading this article gives deeper appreciation for the broader industry behind the macadamia products
+        many of us use daily - whether in cooking, skincare, or wellness. It shows how this small, nutrient-rich
+        nut is shaping regional identity, international trade, and the future of sustainable food innovation.
+      </p>
+
+        <blockquote>
+        “Queensland growers have long been leaders in the industry. Their commitment to quality and innovation
+        ensures Australian macadamias continue to set the global benchmark.”
+        <br>
+        <span>- Clare Hamilton-Bate, CEO, Australian Macadamia Society</span>
+        </blockquote>
+
+      <p style="font-size:0.9rem; color:var(--muted); margin-top:1.5rem;">
+        Read the full article here:
+        <a href="https://www.tiq.qld.gov.au/news-and-events/news/queensland-macadamias-cracking-open-global-opportunities"
+           target="_blank" rel="noopener noreferrer"
+           style="color:var(--accent); text-decoration:none;">
+           Queensland macadamias cracking open global opportunities
+        </a>
+      </p>
+  </section>
+  <!-- ===== END NEWS ARTICLE REVIEW ===== -->
+
+  <section id="picnic-memories" class="container" aria-labelledby="picnic-title">
+    <article class="post" style="max-width: var(--maxw); margin-inline:auto;">
+
+      <h2 id="picnic-title" style="margin-bottom: 0.5rem;">
+        A Picnic Filled with Memories
+      </h2>
+
+      <p>
+      Queen Elizabeth Hill is one of my favourite places for a quiet picnic, the kind of spot where 
+      simple snacks turn into lasting memories. With open skies, soft breezes, and a sweeping view of 
+      downtown Edmonton, it’s easy to slow down and enjoy something as small as sharing macadamia treats 
+      on a blanket. Moments here feel unhurried and warm, the way good memories usually do. To get there, 
+      head toward the High Level Bridge, follow signs for Rossdale, and take the paved path that winds 
+      gently up the hill. The climb is easy, and the view always feels worth it.
+      </p>
+
+       <p style="font-size:0.9rem; color:var(--muted); margin-top:1.5rem;">
+        Source: Google Maps. (2025).
+        <a href="https://www.google.com/maps/place/Queen+Elizabeth+Hill/@53.5255387,-113.5012245,98m/data=!3m2!1e3!4b1!4m6!3m5!1s0x53a02315bfc0ca63:0xea981b5e8a3335d4!8m2!3d53.5255379!4d-113.5005808!16s%2Fg%2F11k5jvkczv?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+            target="_blank" rel="noopener noreferrer"
+            style="color:var(--accent); text-decoration:none;">
+            <em>Queen Elizabeth Hill.</em> 
+        </a>
+      </p>
+
+    </article>
+  </section>
 
       <section>
         <h2>Conclusion: Living the Macadamia Way</h2>
@@ -396,19 +550,6 @@
       <section class="cta">
         <p><strong>Liked this guide?</strong> Try swapping macadamia milk into your morning coffee this week and share the experience with someone close.</p>
       </section>
-
-        <!-- Square Banner Image Linking to Wellness Page -->
-        <div class="square-banner-wrapper">
-        <a href="wellness.html" aria-label="Explore macadamia wellness tips and mindful living.">
-        <img src="img/macadamia-banner-square.jpg" 
-         alt="Explore macadamia wellness and mindful living" 
-         class="square-banner-image"
-         width="250" height="250"
-         loading="lazy" decoding="async">
-        </a>
-        </div>
-
-
 
       <section class="author" id="About">
         <h4>About the Author</h4>
